@@ -1,4 +1,11 @@
 <?php
+
+declare(strict_types=1);
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 //image this code could be a complex query
 $users = ['John Doe', 'Joe Doe', 'John Smith', 'An Onymous'];
 $articles = ['Terror over london', 'Football: a useless hobby?', 'Economic crisis ahead, says expert', 'Fortis is Fortwas'];
@@ -17,9 +24,10 @@ $articles = ['Terror over london', 'Football: a useless hobby?', 'Economic crisi
 <body>
     <h1>Welcome to my site!</h1>
     <form method="post" name="comment">
-    Name:    <input type="text" name="name">
-    Email:    <input type="text" name="email">
-    Comment:    <input type="text" name="Comment">
+    title: <input type="text" name="title" required>
+    Name:    <input type="text" name="name" required>
+    date:    <input type="text" name="date" required>
+    Comment:    <input type="text" name="Comment" required>
         <input type="submit" value="Sign">
     </form>
 
