@@ -4,9 +4,9 @@
 class Post
 {
     private string $title;
-private DateTimeImmutable $date;
-private string $content;
-private string $author;
+    private DateTimeImmutable $date;
+    private string $content;
+    private string $author;
 
     /**
      * Post constructor.
